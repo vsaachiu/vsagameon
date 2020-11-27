@@ -11,14 +11,12 @@
         }
 
         #dropdownme {
-            width: 60%;
+            width: 80%;
             font-size: 1em;
-            vertical-align: top;
         }
         #dropdownme2 {
-            width: 60%;
-            font-size: 1em;
-            vertical-align: text-bottom;
+            width: 80%;
+            font-size: 1em;  
         }
 
         #chooser,
@@ -97,13 +95,13 @@
         <div class="row">
                 <form name="change">
                    <div class="row">
-                    <div class="selection col-md-2 col-sm-3">
+                    <div class="selection col-sm-3 d-none d-sm-block">
                         <ul class="nav flex-column nav-pills" role="tablist">
                             <li class="nav-item "><a href="#bygame" class="nav-link active" data-toggle="pill">By Game</a></li>
                             <li class="nav-item"><a href="#bydesigner" class="nav-link" data-toggle="pill">By Designer</a></li>
                         </ul>
                     </div>
-                    <div class="tab-content col-md-10 col-sm-9">
+                    <div class="tab-content col-sm-9">
                         <div id="bygame" class="chooser tab-pane active" role="tabpanel"><span> </span>
                             <SELECT ID="dropdownme" NAME="options" ONCHANGE="loadForm(this.options[this.selectedIndex].getAttribute('mydata')); loadGame(this.options[this.selectedIndex].value, this.options[this.selectedIndex].text);">
                                 <option value="cover.html">CHOOSE A GAME!</option>
