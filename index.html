@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>VicVern Game Chooser</title>
+    <title>Arcademic Studios Game Catalogue</title>
     <style>
+        body{
+           background-color: #A0E8D6; 
+        }
         #gameiframe {
             width: 95%;
             height: 800px
@@ -85,11 +88,11 @@
 
 
         <div class="row">
-            <div class="d-lg-block d-md-none d-sm-none d-none col-lg-3 col-xl-4 offset-xl-1" id="pickgamepic"><img src="PickGame.gif" height="120px" alt=""></div>
-            <div class="col-xl-3 col-lg-5 col-md-12">
+            <!-- <div class="d-lg-block d-md-none d-sm-none d-none col-lg-3 col-xl-4 offset-xl-1" id="pickgamepic"><img src="PickGame.gif" height="120px" alt=""></div> -->
+            <div class="col-xl-12 col-lg-12 col-md-12">
                 <h1 id="toptitle">Arcademic Game Catalogue</h1>
             </div>
-            <div id="feedbackpic" class="d-lg-block d-md-none d-sm-none d-none col-lg-2 col-xl-2 offset-xl-1"><img src="feedback.gif" height="120px" alt=""></div>
+            <!-- <div id="feedbackpic" class="d-lg-block d-md-none d-sm-none d-none col-lg-2 col-xl-2 offset-xl-1"><img src="feedback.gif" height="120px" alt=""></div> -->
 
         </div>
         <div class="row">
@@ -122,9 +125,9 @@
             <h1 id="gametitle"></h1>
         </div>
         <div class="row">
-            <div id="gamediv" class="col-xl-9 col-lg-8"><iframe name="gameiframe" id="gameiframe" src="cover.html"></iframe>
+            <div id="gamediv" class="col-xl-12 col-lg-12"><iframe name="gameiframe" id="gameiframe" src="cover.html"></iframe>
             </div>
-            <div id="feedbackformdiv" class="col-xl-3 col-lg-4 container">
+            <div id="feedbackformdiv" class="hidden col-xl-3 col-lg-4 container">
                 <ul class="nav nav-pills" role="tablist">
                     <li class="nav-item"><a class="nav-link active" role="tab" id="btn1" href="#t1" onclick="getFeedback(document.getElementById('feedbackBtn').myData)" data-toggle="pill">See Feedback</a></li>
                     <li class="nav-item"><a class="nav-link" role="tab" href="#t2" id="feedbackBtn" myData="" onclick="openForm(this.myData)" data-toggle="pill">Give Feedback</a></li>
@@ -139,7 +142,7 @@
                         <p id="fbcool"></p>
                     </div>
                     <div class="tab-pane" aria-labelledby="pills-t2" id="t2" role="tabpanel">
-                        <iframe name="feedbackiframe" id="feedbackiframe" src=""></iframe>
+                        <iframe name="feedbackiframe" id="feedbackiframe" src="https://docs.google.com/forms/d/e/1FAIpQLScUldEmgvLQp12hUhQ-6WCuFXI3Hy6cz7hJQRbWjCt0G_MvRw/viewform"></iframe>
                     </div>
 
 
