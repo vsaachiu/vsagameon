@@ -11,7 +11,7 @@
  }
  #gameiframe {
      width: 95%;
-     height: 800px
+     height: 450px
  }
 
  #dropdownme {
@@ -50,7 +50,3 @@
  .nav>li.active {
      font-weight: 800;
  }
-
- #pickgamepic {}
-
- #feedbackpic {}
