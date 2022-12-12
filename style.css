@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK3nYivNm4I81PZQ.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  body{
+    background-color: #A0E8D6; 
+ }
+ #gameiframe {
+     width: 95%;
+     height: 800px
+ }
+
+ #dropdownme {
+     width: 80%;
+     font-size: 1em;
+ }
+ #dropdownme2 {
+     width: 80%;
+     font-size: 1em;  
+ }
+
+ #chooser,
+ .chooser {
+     font-size: 1.5em;
+ }
+
+ #toptitle {
+     text-align: center;
+     font-family: 'Press Start 2P',  serif;
+     font-size: 20pt;
+ }
+
+ #feedbackiframe {
+     width: 95%;
+     height: 790px
+ }
+
+ .tab-content {
+     padding: 20px;
+ }
+
+ .nav>li {
+     padding: 5px;
+ }
+
+ .nav>li.active {
+     font-weight: 800;
+ }
+
+ #pickgamepic {}
+
+ #feedbackpic {}
