@@ -69,7 +69,7 @@
 
         function openForm(id) {
             if (!(id == undefined || id == null)) {
-                var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScUldEmgvLQp12hUhQ-6WCuFXI3Hy6cz7hJQRbWjCt0G_MvRw/viewform?usp=pp_url&entry.1004691013='+ encodeURI(id);
+                var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf3R--B-OZqS7CJcvbPTtm0fsMHRvjfh1c-z1_tINm6MH8DJg/viewform?usp=pp_url&entry.1004691013='+ encodeURI(id);
                 document.getElementById('feedbackiframe').src = formUrl;
             }
         }
@@ -155,7 +155,7 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWOw-eR53cuzmcvwlFQ_klL_lQpDkmsUoEVlRrOBOeglC4he7a0KyyF2VZ4jBBDuX0J-w2NmG4Cn8T/pub?gid=795529477&single=true&output=tsv",
+                url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJmyT6z8kIA2Lo4h5I8xcxGClbJduh8fBG3AM0vRPq7RBQqw75xZrQEU1MUy8qG6Q9u906WrrT5MjN/pub?gid=795529477&single=true&output=tsv",
                 type: "GET",
                 contentType: "html",
                 async: false,
@@ -165,7 +165,7 @@
                 }
             });
             $.ajax({
-                url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWOw-eR53cuzmcvwlFQ_klL_lQpDkmsUoEVlRrOBOeglC4he7a0KyyF2VZ4jBBDuX0J-w2NmG4Cn8T/pub?gid=954886362&single=true&output=tsv",
+                url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJmyT6z8kIA2Lo4h5I8xcxGClbJduh8fBG3AM0vRPq7RBQqw75xZrQEU1MUy8qG6Q9u906WrrT5MjN/pub?gid=954886362&single=true&output=tsv",
                 type: "GET",
                 contentType: "html",
                 async: false,
@@ -181,7 +181,7 @@
         function getFeedback(id) {
             console.log(id);
             //var feedbackSource = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRWUNRlOSI-0IVK9A5t8jig4W0BqrpqQMGYLeUOW4vAOGn1f_8Sze6wWOEaNpVSfjHMHl4SvUnt2wpj/pub?gid=1677532158&single=true&output=tsv";
-            var feedbackSource = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWOw-eR53cuzmcvwlFQ_klL_lQpDkmsUoEVlRrOBOeglC4he7a0KyyF2VZ4jBBDuX0J-w2NmG4Cn8T/pub?gid=186726878&single=true&output=tsv"
+            var feedbackSource = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJmyT6z8kIA2Lo4h5I8xcxGClbJduh8fBG3AM0vRPq7RBQqw75xZrQEU1MUy8qG6Q9u906WrrT5MjN/pub?gid=1894591275&single=true&output=tsv"
             var allFeedback;
             var warm = "";
             var cool = "";
