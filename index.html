@@ -75,8 +75,14 @@
         }
 
         function loadGame(url, title) {
-            document.getElementById('gameiframe').src = url;
-            document.getElementById('gameiframe').focus();
+            var loadingDiv = document.getElementById('loading');
+            var gameIframe = document.getElementById('gameiframe')
+            loadingDiv.style.display = 'block';
+            gameIframe.onload = function(){
+                loadingDiv.style.display = 'none';
+                gameIframe.focus();
+            }
+            gameIframe.src = url;
             document.getElementById('gametitle').innerHTML = title;
         }
     </script>
@@ -126,6 +132,7 @@
         </div>
         <div class="row">
             <h1 id="gametitle" class="col-lg-12"></h1>
+            <div id="loading" class="col-lg-12" style="display:none;">Loading...</div>
             <div id="gamediv" class="col-xl-8 col-lg-7"><iframe name="gameiframe" id="gameiframe" src="cover.html"></iframe>
             </div>
             <div id="feedbackformdiv" class="col-xl-4 col-lg-5 container">
